@@ -1,0 +1,20 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+#signature-board {
+  background-color: #999999;
+  vertical-align: bottom;
+}
+.config-item {
+  margin-top: 20px;
+}
+.action {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.action button {
+  margin: 0 20px;
+}

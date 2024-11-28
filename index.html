@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>画板</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="signature-container">
+    <canvas id="signature-board"></canvas>
+    <div class="config">
+      <div class="config-item">
+        <label for="color">颜色</label>
+        <input type="color" id="color" name="color" value="#000000" />
+      </div>
+      <div class="config-item">
+        <label for="size">大小</label>
+        <input type="range" id="size" name="size" min="1" max="20" value="5"/>
+      </div>
+    </div>
+    <div class="action">
+      <button id="clear">清除</button>
+      <button id="save">保存</button>
+      <button id="download">下载</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/vconsole@3.15.1/dist/vconsole.min.js"></script>
+  <script>
+    if (location.href.includes('debug=true')) {
+      var vConsole = new VConsole();
+    }
+  </script>
+</body>
+</html>
